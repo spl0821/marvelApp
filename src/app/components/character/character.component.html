@@ -1,0 +1,17 @@
+<p-card [style]="{'width': '100%'}">
+    <div class="row display__flex justify__spacebetween">
+        <div class="col-4 character__image">
+            <img [src]="character.thumbnail.path + '.' + character.thumbnail.extension" alt="">
+        </div>
+        <div class="col-8 features__container">
+            <h3>{{character.name}}</h3>
+            <p class="character__description">{{character.description !== '' ? character.description : 'No description available' }}</p>
+            <div class="character__features">
+                <p><strong># comics: </strong>{{character.comics.items.length}}</p>
+                <p><strong># series: </strong>{{character.series.items.length}}</p>
+                <p><strong># stories: </strong>{{character.stories.items.length}}</p>
+            </div>
+        </div>
+    </div>
+
+</p-card>

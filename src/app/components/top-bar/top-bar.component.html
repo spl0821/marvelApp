@@ -1,0 +1,8 @@
+<nav class="navbar" style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+  <div class="container-fluid">
+    <a class="navbar-brand">MARVEL</a>
+    <form class="d-flex" role="search">
+      <input [formControl]="searchInput" class="form-control me-2" type="search" placeholder="Search character" aria-label="Search" (keydown.enter)="onEnter($event)">
+    </form>
+  </div>
+</nav>

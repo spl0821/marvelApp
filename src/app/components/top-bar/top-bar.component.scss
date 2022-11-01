@@ -1,0 +1,17 @@
+nav{
+    background-color: #0288D1;
+}
+
+.navbar-brand{
+    background-color: #E53935;
+    color: white;
+    padding: 3px;
+    border-radius: 3px;
+    font-weight: 900;
+}
+
+@media only screen and (max-device-width: 343px){
+    .navbar-brand{
+        margin-bottom: 10px;
+    }
+}
